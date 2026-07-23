@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ゲームに本気なきみへ。人生にも、安定ジョブを。| 設備保全エンジニア採用 [v6ラフ完成版]</title>
+<title>ゲームに本気なきみへ。人生にも、安定ジョブを。| 設備保全エンジニア採用 [v7ラフ完成版]</title>
 <meta name="description" content="未経験から機械メンテナンスのプロへ。1.5ヶ月の本格研修つき・無期雇用派遣で安定。eスポーツ部もある働き方。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -774,7 +774,8 @@ footer a:hover{color:var(--pink);}
 @media (max-width:960px){
   section{padding:84px 0;}
   .hero{padding:56px 0 90px;}
-  .hero .wrap{grid-template-columns:1fr;gap:40px;}
+  .hero .wrap{grid-template-columns:1fr;gap:34px;}
+  .hero-kv{order:-1;}
   .hero-kv .slot{aspect-ratio:16/10;min-height:260px;}
   .specbar-in{grid-template-columns:repeat(3,1fr);}
   .spec:nth-child(3){border-right:none;}
@@ -787,14 +788,77 @@ footer a:hover{color:var(--pink);}
   .flow{grid-template-columns:1fr 1fr;}
   .ghost{font-size:clamp(56px,16vw,110px);top:16px;}
 }
-@media (max-width:520px){
-  .flow{grid-template-columns:1fr;}
+@media (max-width:640px){
+  section{padding:64px 0;}
+  .wrap{padding:0 18px;}
+  .hero{padding:22px 0 68px;}
+  .hero-eyebrow{font-size:11px;letter-spacing:.18em;padding:4px 12px;margin-bottom:16px;}
+  h1{font-size:clamp(26px,7.6vw,34px);margin-bottom:16px;}
+  .hero-sub{font-size:13.5px;margin-bottom:22px;}
+  .hero-tags{gap:7px;margin-bottom:26px;}
+  .hero-tags span{font-size:11px;padding:4px 10px;}
+  .hero .btn{width:100%;}
+  .btn{font-size:15.5px;padding:16px 24px;}
+  .specbar{margin-top:-22px;padding:0 18px;}
+  .specbar-in{grid-template-columns:repeat(2,1fr);}
+  .spec{border-right:none;border-bottom:1px solid var(--line);padding:13px 8px 11px;}
+  .spec:nth-child(odd){border-right:1px solid var(--line);}
+  .spec:nth-child(n+4){border-bottom:1px solid var(--line);}
+  .spec:nth-child(n+5){border-bottom:none;}
+  .spec .l{font-size:10px;}
+  .spec .v{font-size:13px;}
+  .marquee{padding:7px 0;}
+  .mq-track{font-size:13px;letter-spacing:.16em;}
+  .ghost{font-size:clamp(52px,16vw,92px);top:12px;right:0;}
+  .eyebrow{font-size:12.5px;letter-spacing:.2em;margin-bottom:14px;}
+  h2{font-size:clamp(23px,6.6vw,30px);margin-bottom:16px;}
+  .lead{font-size:13.5px;}
+  .checklist{gap:10px;margin-top:30px;}
+  .check{font-size:13.5px;padding:14px 16px;gap:11px;}
+  .check .box{width:18px;height:18px;margin-top:3px;}
+  .check .box::after{font-size:12px;}
+  .check-bridge{margin-top:34px;font-size:clamp(17px,5vw,21px);}
+  .job-grid{gap:14px;margin-top:32px;}
+  .job-card{padding:22px 20px;}
+  .job-card h3{font-size:17.5px;}
+  .job-img{margin-top:18px;}
+  .training-grid{gap:28px;margin-top:32px;}
+  .stage{gap:16px;padding:15px 0;}
+  .stage .nd{width:50px;height:50px;}
+  .stage .nd span{font-size:19px;}
+  .stage:not(:last-child)::before{left:24px;top:62px;}
+  .tf-row{grid-template-columns:repeat(3,1fr);gap:8px;margin-top:34px;}
+  .tf{padding:14px 6px;border-bottom-width:2px;}
+  .tf .big{font-size:17px;}
+  .tf .cap{font-size:10px;margin-top:4px;}
+  .stable-grid{gap:14px;margin-top:32px;}
+  .stable-card{padding:22px 20px;}
+  .stable-card h3{font-size:17px;}
+  .esports-inner{gap:26px;}
+  .guild ul{padding:16px 20px 0;}
+  .guild li{font-size:13.5px;}
+  .voices{gap:16px;margin-top:32px;}
+  .voice h3{margin:15px 20px 5px;}
+  .voice .prof{margin:0 20px 10px;}
+  .voice p{margin:0 20px;font-size:13px;}
+  .flow{grid-template-columns:1fr;gap:12px;margin-top:32px;}
+  .fstep{padding:20px 18px;}
+  .fstep .n{font-size:32px;margin-bottom:8px;}
+  .faq{margin-top:28px;}
+  summary{padding:16px 18px;font-size:14px;gap:11px;}
+  .faq-a{padding:0 18px 18px 44px;font-size:13.5px;}
+  .entry-kv{margin-bottom:28px;}
+  .entry-copy{font-size:clamp(20px,6vw,26px);}
+  .entry-lead{margin-bottom:28px;font-size:13.5px;}
+  .entry-form{padding:26px 20px;}
+  .field input,.field select{padding:12px 12px;font-size:16px;}
+  footer{padding:36px 0 120px;}
 }
 </style>
 </head>
 <body>
 
-<div class="draft-banner">【社内確認用ドラフト v6/全ビジュアル差し込み済み】 <strong>仮</strong>=要確認 / 全ビジュアルはAI制作の仮イラスト(左上IDが素材リストと対応・本番差し替え前提)/公開時にこのバナーは削除</div>
+<div class="draft-banner">【社内確認用ドラフト v7/スマホ最適化済み】 <strong>仮</strong>=要確認 / 全ビジュアルはAI制作の仮イラスト(左上IDが素材リストと対応・本番差し替え前提)/公開時にこのバナーは削除</div>
 
 <!-- ============ HERO ============ -->
 <header class="hero">
