@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ゲームに本気なきみへ。人生にも、安定ジョブを。| 設備保全エンジニア採用 [v7ラフ完成版]</title>
+<title>ゲームに本気なきみへ。人生にも、安定ジョブを。| 設備保全エンジニア採用 [v8プロ仕上げ版]</title>
 <meta name="description" content="未経験から機械メンテナンスのプロへ。1.5ヶ月の本格研修つき・無期雇用派遣で安定。eスポーツ部もある働き方。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#07070C;
@@ -25,7 +25,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
-  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-family:'Noto Sans JP',sans-serif;
   background:var(--bg);
   color:var(--text);
   line-height:1.8;
@@ -77,17 +77,9 @@ h2{
   line-height:1.4;
   letter-spacing:.02em;
   margin-bottom:22px;
-  font-style:italic;
+  font-feature-settings:"palt";
 }
-h2 em{
-  font-style:italic;
-  color:#fff;
-  background:var(--grad);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 16px rgba(255,61,138,.45));
-}
+h2 em{font-style:normal;color:var(--pink);}
 h2 .mk{
   font-style:italic;
   position:relative;
@@ -97,10 +89,10 @@ h2 .mk::before{
   content:"";
   position:absolute;
   inset:58% -2px 4%;
-  background:var(--grad);
+  background:var(--pink);
   transform:skewX(-16deg);
   z-index:-1;
-  opacity:.85;
+  opacity:.4;
 }
 .lead{color:var(--muted);font-size:clamp(14px,1.8vw,16px);max-width:660px;}
 .kari{
@@ -127,7 +119,7 @@ h2 .mk::before{
   font-size:clamp(72px,13vw,170px);
   line-height:1;
   color:transparent;
-  -webkit-text-stroke:1px rgba(255,255,255,.07);
+  -webkit-text-stroke:1px rgba(255,255,255,.05);
   pointer-events:none;
   user-select:none;
   white-space:nowrap;
@@ -214,7 +206,7 @@ h2 .mk::before{
   cursor:pointer;
   text-decoration:none;
   transform:skewX(-8deg);
-  box-shadow:0 0 26px rgba(255,61,138,.55), 0 10px 30px rgba(157,92,255,.25);
+  box-shadow:0 6px 20px rgba(255,61,138,.28);
   transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 .btn>span{display:inline-block;transform:skewX(8deg);}
@@ -225,7 +217,7 @@ h2 .mk::before{
   border:1px solid rgba(255,255,255,.5);
   pointer-events:none;
 }
-.btn:hover{filter:brightness(1.12);box-shadow:0 0 40px rgba(255,61,138,.8), 0 12px 34px rgba(157,92,255,.35);}
+.btn:hover{filter:brightness(1.08);box-shadow:0 8px 26px rgba(255,61,138,.4);}
 .btn:active{transform:skewX(-8deg) translateY(3px);}
 .btn:focus-visible{outline:3px solid var(--cyan);outline-offset:4px;}
 .btn-sub{
@@ -334,19 +326,12 @@ h2 .mk::before{
 h1{
   font-size:clamp(36px,6vw,64px);
   font-weight:900;
-  font-style:italic;
-  line-height:1.3;
-  letter-spacing:.01em;
+  line-height:1.32;
+  letter-spacing:.02em;
+  font-feature-settings:"palt";
   margin-bottom:26px;
-  text-shadow:0 0 40px rgba(157,92,255,.35);
 }
-h1 .grad{
-  background:var(--grad);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 18px rgba(255,61,138,.55));
-}
+h1 .grad{color:var(--pink);}
 .hero-sub{
   color:var(--muted);
   font-size:clamp(14px,1.9vw,17px);
@@ -435,16 +420,10 @@ h1 .grad{
   text-align:center;
   font-size:clamp(19px,3vw,26px);
   font-weight:900;
-  font-style:italic;
+  font-feature-settings:"palt";
   line-height:1.7;
 }
-.check-bridge em{
-  font-style:italic;
-  background:var(--grad);
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 14px rgba(255,61,138,.5));
-}
+.check-bridge em{font-style:normal;color:var(--pink);}
 
 /* ===== 仕事内容 ===== */
 .job-grid{
@@ -512,7 +491,7 @@ h1 .grad{
   border:2px solid var(--pink);
   transform:rotate(45deg);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 0 18px rgba(255,61,138,.35);
+  box-shadow:0 0 0 4px rgba(255,61,138,.08);
   z-index:1;
 }
 .stage .nd span{transform:rotate(-45deg);font-size:22px;}
@@ -543,10 +522,7 @@ h1 .grad{
 .tf .big{
   font-size:clamp(26px,3.4vw,36px);
   font-weight:900;
-  font-style:italic;
-  background:var(--grad);
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:#fff;
   line-height:1.3;
 }
 .tf .big small{font-size:.5em;}
@@ -575,7 +551,8 @@ h1 .grad{
   opacity:.14;
   transform:rotate(45deg);
 }
-.stable-card .icon{font-size:28px;margin-bottom:14px;filter:drop-shadow(0 0 12px rgba(157,92,255,.6));}
+.stable-card .icon{margin-bottom:14px;}
+.stable-card .icon svg,.stage .nd svg{width:24px;height:24px;display:block;}
 .stable-card h3{font-size:19px;font-weight:900;margin-bottom:10px;}
 .stable-card h3 .hl{color:var(--pink);}
 .stable-card p{color:var(--muted);font-size:14px;}
@@ -658,9 +635,7 @@ h1 .grad{
   font-style:italic;
   font-size:40px;
   line-height:1;
-  background:var(--grad);
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:var(--pink);
   margin-bottom:12px;
 }
 .fstep h3{font-size:16.5px;font-weight:900;margin-bottom:6px;}
@@ -703,18 +678,11 @@ details[open] summary::after{content:"−";}
 .entry-copy{
   font-size:clamp(24px,4vw,38px);
   font-weight:900;
-  font-style:italic;
+  font-feature-settings:"palt";
   line-height:1.55;
   margin-bottom:14px;
-  text-shadow:0 0 30px rgba(157,92,255,.4);
 }
-.entry-copy em{
-  font-style:italic;
-  background:var(--grad);
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 16px rgba(255,61,138,.55));
-}
+.entry-copy em{font-style:normal;color:var(--pink);}
 .entry-lead{color:var(--muted);font-size:15px;margin-bottom:44px;}
 .entry-form{
   max-width:520px;
@@ -858,7 +826,7 @@ footer a:hover{color:var(--pink);}
 </head>
 <body>
 
-<div class="draft-banner">【社内確認用ドラフト v7/スマホ最適化済み】 <strong>仮</strong>=要確認 / 全ビジュアルはAI制作の仮イラスト(左上IDが素材リストと対応・本番差し替え前提)/公開時にこのバナーは削除</div>
+<div class="draft-banner">【社内確認用ドラフト v8/プロ仕上げ版】 <strong>仮</strong>=要確認 / 全ビジュアルはAI制作の仮イラスト(左上IDが素材リストと対応・本番差し替え前提)/公開時にこのバナーは削除</div>
 
 <!-- ============ HERO ============ -->
 <header class="hero">
@@ -878,8 +846,8 @@ footer a:hover{color:var(--pink);}
         <span><i>寮あり・全国で新生活<span class="kari">仮</span></i></span>
         <span><i>eスポーツ部あり</i></span>
       </div>
-      <a class="btn" href="#entry"><span>▶ まずは話を聞いてみる(無料)</span></a>
-      <span class="btn-sub">✓ 応募=入社確定ではありません。カジュアルな面談からスタート</span>
+      <a class="btn" href="#entry"><span>まずは話を聞いてみる(無料)</span></a>
+      <span class="btn-sub">応募=入社確定ではありません。カジュアルな面談からスタート</span>
     </div>
     <div class="hero-kv">
       <div class="art">
@@ -905,8 +873,8 @@ footer a:hover{color:var(--pink);}
 <!-- マーキー帯 -->
 <div class="marquee" style="margin-top:56px;" aria-hidden="true">
   <div class="mq-track">
-    <span>NEW GAME START</span><span>★</span><span>未経験からエンジニアへ</span><span>★</span><span>MAINTENANCE ENGINEER</span><span>★</span><span>eスポーツ部あり</span><span>★</span><span>1.5ヶ月の本格研修</span><span>★</span>
-    <span>NEW GAME START</span><span>★</span><span>未経験からエンジニアへ</span><span>★</span><span>MAINTENANCE ENGINEER</span><span>★</span><span>eスポーツ部あり</span><span>★</span><span>1.5ヶ月の本格研修</span><span>★</span>
+    <span>NEW GAME START</span><span>/</span><span>未経験からエンジニアへ</span><span>/</span><span>MAINTENANCE ENGINEER</span><span>/</span><span>eスポーツ部あり</span><span>/</span><span>1.5ヶ月の本格研修</span><span>/</span>
+    <span>NEW GAME START</span><span>/</span><span>未経験からエンジニアへ</span><span>/</span><span>MAINTENANCE ENGINEER</span><span>/</span><span>eスポーツ部あり</span><span>/</span><span>1.5ヶ月の本格研修</span><span>/</span>
   </div>
 </div>
 
@@ -982,19 +950,19 @@ footer a:hover{color:var(--pink);}
     <div class="training-grid">
       <div class="stages">
         <div class="stage rv">
-          <div class="nd"><span>🔧</span></div>
+          <div class="nd"><span><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div>
           <div><h3><span class="tag">STAGE 1</span>工具の基本</h3><p>工具の使い方を一から。ここが全スキルの土台になります。</p></div>
         </div>
         <div class="stage rv">
-          <div class="nd"><span>⚙️</span></div>
+          <div class="nd"><span><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span></div>
           <div><h3><span class="tag">STAGE 2</span>組立・部品の特性</h3><p>機械を分解・組立しながら、部品ごとの役割と特性を理解。</p></div>
         </div>
         <div class="stage rv">
-          <div class="nd"><span>⚡</span></div>
+          <div class="nd"><span><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span></div>
           <div><h3><span class="tag">STAGE 3</span>電気回路</h3><p>回路図を読み、自分で組めるレベルまで。ここで一気にレベルアップ。</p></div>
         </div>
         <div class="stage rv">
-          <div class="nd"><span>🏭</span></div>
+          <div class="nd"><span><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5 3v-3l5 3V7h4a2 2 0 0 1 2 2v12H3z"/><path d="M7 17h2M11.5 17h2M16 17h2"/></svg></span></div>
           <div><h3><span class="tag">CLEAR</span>現場デビュー</h3><p>適性と希望エリアを踏まえて配属先を決定。プロとして始動。</p></div>
         </div>
       </div>
@@ -1022,22 +990,22 @@ footer a:hover{color:var(--pink);}
     <p class="lead rv">ゲームも趣味も、生活が安定してこそ全力で楽しめる。だからこの仕事は、働き方の土台から設計されています。</p>
     <div class="stable-grid">
       <div class="stable-card rv">
-        <p class="icon">🛡️</p>
+        <p class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.8V11c0 4.9-3.1 7.8-7 9.7C8.1 18.8 5 15.9 5 11V5.8L12 3z"/></svg></p>
         <h3>雇用期間の定めなし<span class="hl">(無期雇用派遣)</span><span class="kari">仮</span></h3>
         <p>「派遣」といっても登録型とは別物。当社と期間の定めなく雇用契約を結んだうえで、配属先で働くスタイル。月給制で収入が安定します。</p>
       </div>
       <div class="stable-card rv">
-        <p class="icon">🏠</p>
+        <p class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></p>
         <h3>寮あり。<span class="hl">スポーン地点</span>から選べる<span class="kari">仮</span></h3>
         <p>実家を出たい、環境を変えたい人に。研修から配属まで住まいをサポート。新しい土地で、新しい自分を始められます。</p>
       </div>
       <div class="stable-card rv">
-        <p class="icon">📈</p>
+        <p class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></p>
         <h3>技術職だから、<span class="hl">単価が違う</span></h3>
         <p>設備保全は工場に欠かせない技術職。一般的な製造スタッフより専門性が高く、経験を積むほど市場価値が上がっていきます。</p>
       </div>
       <div class="stable-card rv">
-        <p class="icon">🎮</p>
+        <p class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF3D8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h10a5 5 0 0 1 5 5v1.5A2.5 2.5 0 0 1 17.6 16l-1.8-2H8.2l-1.8 2A2.5 2.5 0 0 1 2 14.5V13a5 5 0 0 1 5-5z"/><path d="M7 11.5h3M8.5 10v3"/><circle cx="15.5" cy="11" r=".7" fill="#FF3D8A"/><circle cx="17.8" cy="12.8" r=".7" fill="#FF3D8A"/></svg></p>
         <h3>趣味の時間を<span class="hl">確保できる</span>働き方<span class="kari">仮</span></h3>
         <p>シフトが読めない接客業とは違い、予定が立てやすい働き方。仕事のあと・休日のゲーム時間は、ちゃんと守れます。</p>
       </div>
@@ -1178,8 +1146,8 @@ footer a:hover{color:var(--pink);}
 
 <div class="marquee" aria-hidden="true">
   <div class="mq-track">
-    <span>FINAL QUEST</span><span>★</span><span>まずは話を聞くだけでOK</span><span>★</span><span>ENTRY 1 MIN</span><span>★</span><span>履歴書不要</span><span>★</span>
-    <span>FINAL QUEST</span><span>★</span><span>まずは話を聞くだけでOK</span><span>★</span><span>ENTRY 1 MIN</span><span>★</span><span>履歴書不要</span><span>★</span>
+    <span>FINAL QUEST</span><span>/</span><span>まずは話を聞くだけでOK</span><span>/</span><span>ENTRY 1 MIN</span><span>/</span><span>履歴書不要</span><span>/</span>
+    <span>FINAL QUEST</span><span>/</span><span>まずは話を聞くだけでOK</span><span>/</span><span>ENTRY 1 MIN</span><span>/</span><span>履歴書不要</span><span>/</span>
   </div>
 </div>
 
@@ -1220,7 +1188,7 @@ footer a:hover{color:var(--pink);}
         <label>お住まいの都道府県</label>
         <input type="text" name="pref" placeholder="大阪府">
       </div>
-      <button type="submit" class="btn"><span>▶ この内容で話を聞いてみる</span></button>
+      <button type="submit" class="btn"><span>この内容で話を聞いてみる</span></button>
       <span class="btn-sub" style="text-align:center;">送信後、担当者よりお電話またはSMSでご連絡します<span class="kari">仮</span></span>
     </form>
     <p class="entry-note">※ このフォームはデザイン確認用で、送信機能は未接続です。導入するCRM/計測タグに合わせて実装します。<br>※ 個人情報の取り扱い・労働条件明示など法定記載は正式文面に差し替えてください。</p>
@@ -1254,7 +1222,7 @@ footer a:hover{color:var(--pink);}
 
 <!-- 追従CTA -->
 <div class="fixed-cta" id="fixedCta">
-  <a class="btn" href="#entry"><span>▶ まずは話を聞いてみる(無料)</span></a>
+  <a class="btn" href="#entry"><span>まずは話を聞いてみる(無料)</span></a>
 </div>
 
 <script>
